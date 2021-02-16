@@ -5,22 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/contact.css">
     <title>Document</title>
+    <script>
+        const togglebutton = document.getElementsByClassName('toggle-botton');
+        const closebtn = document.getElementsByClassName('close');
+        const navbarlinks = document.getElementsByClassName('navbar-links');
+    
+    
+        function handleToggle(){
+            navbarlinks[0].style.display = 'block';
+            closebtn[0].style.display = 'block';
+            togglebutton[0].style.display = 'none';
+    
+        }
+        function closetoggle(){
+            navbarlinks[0].style.display = 'none';
+            closebtn[0].style.display = 'none';
+            togglebutton[0].style.display = 'flex';
+        }
+    </script>
 </head>
 <body>
-    <header>
-        
-        <div  class="menu">
+    <nav class="navbar">
+        <nav class="navbar" id="lorem">
+            <div class="brand-title">AnnounceIt</div>
+            <a href="#" class="toggle-botton" id="toggle" onClick="handleToggle()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="close" onclick="closetoggle()">X</div>
+        <div class="navbar-links">
             <ul>
-                <li> <label for="" class="logo">AnnounceIt</label></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="create.html">Create Announcement</a></li>
-                <li><a href="contactUs.html">Contact us</a></li>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="create.html">create</a></li>
+                <li><a href="contactUs.html">contact us</a></li>
                 <li><a href="profile.html">profile</a></li>
-
             </ul>
-
         </div>
-    </header>
+
+    </nav>
     
     <section class="contact">
         <div class="content">
