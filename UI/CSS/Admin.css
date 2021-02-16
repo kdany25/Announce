@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 19, 2020, 8:50:18 AM
+    Author     : DANY
+*/
+
+body{
+    margin: 20px;
+    padding: 0;
+    font-family: "Roboto",sans-serif;
+}
+header{
+    position: fixed;
+    background: #1c7211;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    left: 0;
+    top: 0;
+}
+.left_area h3{
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 900;
+
+    
+}
+.left_area span{
+    color: #1DC4E7;
+}
+.logout_btn{
+    padding: 5px;
+    background: #b64a0c;
+    text-decoration: none;
+    float: right;
+    margin-top: -30px;
+    margin-right: 40px;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #fff;
+    transition: 0.5s;
+    border-radius: 20px;
+    transition-property: background;
+}
+.logout_btn:hover{
+    background: #1c7211;
+}
+.sidebar{
+    background: #1c7211;
+    margin-top: 50px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    transition: 0.5s;
+    transition-property: left;
+}
+.sidebar .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 80px;
+    margin-bottom: 10px;
+}
+.sidebar h4{
+    color: #CCC;
+    margin-top: 0;
+    margin-bottom:  20px;
+}
+.sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+}
+.sidebar a:hover{
+    background: #19B3D3;
+}
+.sidebar i{
+    padding-right: 10px;
+}
+.content{
+    margin-left:260px;
+    background: url(backgound.png) no-repeat;
+    
+   background-position: center;
+   background-size: cover;
+   position: inherit;
+   
+    
+    height: 100%;
+   transition: 0.5s;
+}
+
+
+table{
+    
+   
+    margin: 0px;
+    margin-left: 0px;
+    border-collapse: collapse;
+    width: 100%;
+    height: 200px;
+    border: 1px solid #bdc3c7;
+  
+
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+tr{
+    transition: all .2s ease-in ;
+    cursor: pointer;
+}
+th,td{
+    padding: 12px;
+    text-align: left;
+    border-bottom:  1px solid #ddd;
+}
+#headerr{
+    background-color:  #1c7211;
+    color: #fff;
+}
+
+tr:hover{
+    background-attachment: #f5f5f5;
+    transform: scale(1.02);
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2),-1px -1px 8px rgba(0,0,0,0.2) ;
+
+}
+.buttondelete{
+	background-color: #a81111;
+	display: block;
+	margin: 20px 0px 0px 20px;
+	text-align: center;
+	border-radius: 12px;
+	border: 2px solid #366473;
+	padding: 14px 50px;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.25px;
+
+}
+.buttonupdate{
+	background-color: #1c7211;
+	display: block;
+	margin: 20px 0px 0px 20px;
+	text-align: center;
+	border-radius: 12px;
+	border: 2px solid #366473;
+	padding: 14px 50px;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	transition: 0.25px;
+
+}
+footer{
+    position: absolute;
+
+
+    background: linear-gradient(to right top, rgba(82, 75, 75, 0.9),rgba(184, 115, 37, 0.7));
+    height: 250px;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.footerbottom{
+    /* background: linear-gradient(to right top, rgba(82, 75, 75, 0.9),rgba(184, 115, 37, 0.7));; */
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+.footerbottom{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footerbottom span{
+text-transform: uppercase;
+opacity: .4;
+font-weight: 200;
+}
+@media only screen and (max-width:768){
+    table{
+        width: 90%;
+    }
+}
+

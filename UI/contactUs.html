@@ -1,0 +1,143 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/contact.css">
+    <title>Document</title>
+    <script>
+        const togglebutton = document.getElementsByClassName('toggle-botton');
+        const closebtn = document.getElementsByClassName('close');
+        const navbarlinks = document.getElementsByClassName('navbar-links');
+    
+    
+        function handleToggle(){
+            navbarlinks[0].style.display = 'block';
+            closebtn[0].style.display = 'block';
+            togglebutton[0].style.display = 'none';
+    
+        }
+        function closetoggle(){
+            navbarlinks[0].style.display = 'none';
+            closebtn[0].style.display = 'none';
+            togglebutton[0].style.display = 'flex';
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar">
+        <nav class="navbar" id="lorem">
+            <div class="brand-title">AnnounceIt</div>
+            <a href="#" class="toggle-botton" id="toggle" onClick="handleToggle()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="close" onclick="closetoggle()">X</div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="create.html">create</a></li>
+                <li><a href="contactUs.html">contact us</a></li>
+                <li><a href="profile.html">profile</a></li>
+            </ul>
+        </div>
+
+    </nav>
+    
+    <section class="contact">
+        <div class="content">
+            <h2>contact us</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab eos voluptatibus deserunt ea consequatur aspernatur quaerat veniam natus exercitationem dolore.</p>
+
+
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"> </div>
+                        <div class="text">
+                            <h3>address</h3>
+                            <p> KG24 Road,<br>KIGALI,Rwanda</p>
+                            
+                        </div>
+
+
+                   
+
+                </div>
+
+                <div class="box">
+                    <div class="icon">  </div>
+                        <div class="text">
+                            <h3>PhoneNumber</h3>
+                            <p> +250788730199</p>
+                            
+                        </div>
+
+
+                  
+
+                </div>
+
+                <div class="box">
+                    <div class="icon"> </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>kabadany25@gmail.com</p>
+                            
+                        </div>
+
+
+                   
+</div>
+                </div>
+                <div class="contactform">
+                    <form action="">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" id="" required>
+                            <span>Full name</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="text" name="" id="" required>
+                            <span>Email</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <textarea name="" id="" cols="5" rows="3"></textarea>
+                            <span>Type your Message</span>
+                        </div>
+
+                        <div class="inputBox">
+                            <input type="submit" name="" id="" value="Send">
+                           
+                        </div>
+
+                    </form>
+
+                </div>
+
+
+
+            </div>
+
+        
+
+    </section>
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>AnnounceIt</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae doloribus tempora voluptas expedita laudantium consequuntur quis, culpa dolore quidem. Optio!</p>
+    
+        </div>
+        <div class="footerbottom">
+            <p>copyright &copy; 2021 AnnounceIt designed by <span>KDany</span></p>
+        </div>
+    </footer>
+    
+</body>
+</html>

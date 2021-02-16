@@ -4,13 +4,12 @@
 	padding: 0;
 	text-decoration: none;
 	font-family: "Roboto";
-	outline: none;
-	border: none;
+	
 }
 
 html, body {
 	height: 100%;
-	background: #050505;
+	background: #8f8e8e;
 }
 
 .content {
@@ -21,9 +20,84 @@ html, body {
 	flex-direction: column;
 	padding-bottom: 8px;
 }
+header{
+  position: fixed;
+ 
+    top: 0;
+	left: 0;
+	width: 100%;
+	padding: 25px 20px;
+	background: linear-gradient(to top,transparent , rgba(0,0,0,0.6));
+	
+
+}
+header .logo{
+	font-size: 24px;
+	font-weight: 700;
+	color: rgb(248, 116, 8);
+	float: left;
+	
+}
+header .menu{
+	display: flex;
+	margin-top: 5px;
+
+}
+header ul li{
+	display: inline-block;
+}
+header ul li#inner{
+background-color: white;
+padding: 10px;
+border-radius: 20px;
+
+	
+}
+
+header ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: rgb(255, 255, 255);
+	margin: 0 25px;
+	font-weight: 500;
+	letter-spacing: 2px;
+	transition: all .2s ease-in ;
+    
+
+}
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	background-color: #333;
+	color: white;
+
+}
+.brand-title{
+	font-size: 1rem;
+	margin: .5rem;
+}
+.navbar-links ul{
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.navbar-links li{
+	list-style: none;
+
+}
+.navbar-links li a{
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+	display: block;
+}
+.navbar-links li:hover{
+	background-color: #555;
+}
 
 .logo {
-	width: 120px;
+	width: 100px;
 }
 .containerr {
 	margin-top: 15px;
